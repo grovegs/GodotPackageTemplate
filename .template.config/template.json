@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Grove Games",
+    "classifications": [
+        "Godot",
+        "Template"
+    ],
+    "name": "Godot Package Template",
+    "identity": "GroveGames.GodotPackageTemplate",
+    "shortName": "godotpackage",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "GroveGames.GodotPackageTemplate",
+    "preferNameDirectory": true,
+    "symbols": {
+        "name": {
+            "type": "parameter",
+            "description": "Name of the package in pascal case.",
+            "dataType": "text",
+            "replaces": "$(Name)",
+            "defaultValue": "Name"
+        },
+        "author": {
+            "type": "parameter",
+            "description": "Author of the package in pascal case.",
+            "dataType": "text",
+            "replaces": "$(Author)",
+            "defaultValue": "Author"
+        },
+        "description": {
+            "type": "parameter",
+            "description": "Description of the package in pascal case.",
+            "dataType": "text",
+            "replaces": "$(Description)",
+            "defaultValue": "Description"
+        }
+    }
+}

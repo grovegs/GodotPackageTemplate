@@ -36,8 +36,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
-    <Compile Remove="**\*" />
+    <None Include=".template.config/template.json" Pack="true" PackagePath=".template.config/" />
+    <Content Include="content/**/*" Exclude="content/**/bin/**/*;content/**/obj/**/*" />
+    <Compile Remove="**/*" />
   </ItemGroup>
 
   <ItemGroup>
