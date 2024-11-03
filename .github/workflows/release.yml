@@ -15,7 +15,6 @@ on:
 
 env:
   NAME: GodotPackageTemplate
-  AUTHOR: GroveGames
 
 jobs:
   set_metadata:
@@ -57,19 +56,19 @@ jobs:
       - name: 🏗️ Dotnet Build
         uses: grovegs/actions/.github/actions/build-dotnet@main
         with:
-          project: $AUTHOR.$NAME/$AUTHOR.$NAME.csproj
+          project: $NAME.csproj
           version: ${{ needs.set_metadata.outputs.version }}
           configuration: Release
 
       - name: 📦 Pack Nuget
         uses: grovegs/actions/.github/actions/pack-nuget@main
         with:
-          project: $AUTHOR.$NAME/$AUTHOR.$NAME.csproj
+          project: $NAME.csproj
           version: ${{ needs.set_metadata.outputs.version }}
           configuration: Release
           artifact: ${{ needs.set_metadata.outputs.artifact }}
 
-  release:
+  release_nuget:
     needs: [set_metadata, build]
     runs-on: ubuntu-latest
     steps:
