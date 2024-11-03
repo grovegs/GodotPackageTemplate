@@ -51,6 +51,41 @@
             "description": "Semicolon-separated tags that categorize the package in kebab case.",
             "dataType": "text",
             "replaces": "{{Tags}}"
+        },
+        "SolutionFolderGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{{SolutionFolderGuid}}"
+        },
+        "SrcGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{{SrcGuid}}"
+        },
+        "TestsGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{{TestsGuid}}"
+        },
+        "MainProjectGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{{MainProjectGuid}}"
+        },
+        "GodotProjectGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{{GodotProjectGuid}}"
+        },
+        "TestsProjectGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{{TestsProjectGuid}}"
+        },
+        "GodotTestsProjectGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{{GodotTestsProjectGuid}}"
         }
     },
     "sources": [
