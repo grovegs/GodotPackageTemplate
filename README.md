@@ -1,4 +1,4 @@
-# GodotPackageTemplate
+# GroveGames.GodotPackageTemplate
 
 [![Build Status](https://github.com/grovegs/GodotPackageTemplate/actions/workflows/release.yml/badge.svg)](https://github.com/grovegs/GodotPackageTemplate/actions/workflows/release.yml)
 [![Tests](https://github.com/grovegs/GodotPackageTemplate/actions/workflows/tests.yml/badge.svg)](https://github.com/grovegs/GodotPackageTemplate/actions/workflows/tests.yml)

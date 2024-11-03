@@ -7,23 +7,23 @@
     <Nullable>enable</Nullable>
     <NoWarn>1591;1573</NoWarn>
 
-    <RootNamespace>{{Author}}.{{Name}}</RootNamespace>
-    <Title>{{Author}}.{{Name}}</Title>
+    <RootNamespace>{{Author(P)}}.{{Name(P)}}</RootNamespace>
+    <Title>{{Author(P)}}.{{Name(P)}}</Title>
     <Description>{{Description}}</Description>
-    <Company>Grove Games</Company>
-    <Authors>Grove Games</Authors>
-    <Copyright>© Grove Games</Copyright>
+    <Company>{{Author}}</Company>
+    <Authors>{{Author}}</Authors>
+    <Copyright>© {{Author}}</Copyright>
 
     <PackageId>$(AssemblyName)</PackageId>
     <PackageVersion>$(Version)</PackageVersion>
     <PackageTags>{{Tags}}</PackageTags>
-    <PackageProjectUrl>https://github.com/{{Github}}/{{Name}}</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/{{Github}}/{{Name(P)}}</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>Icon.png</PackageIcon>
 
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/{{Github}}/{{Name}}</RepositoryUrl>
+    <RepositoryUrl>https://github.com/{{Github}}/{{Name(P)}}</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

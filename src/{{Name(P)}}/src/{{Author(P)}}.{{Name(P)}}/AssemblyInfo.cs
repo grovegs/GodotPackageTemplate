@@ -1,4 +1,4 @@
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("{{Author}}.{{Name}}.Tests")]
+[assembly: InternalsVisibleTo("{{Author(P)}}.{{Name(P)}}.Tests")]
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

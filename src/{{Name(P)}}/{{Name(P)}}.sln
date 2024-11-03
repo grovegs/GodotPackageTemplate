@@ -6,13 +6,13 @@ Project("{{SolutionFolderGuid}}") = "src", "src", "{{SrcGuid}}"
 EndProject
 Project("{{SolutionFolderGuid}}") = "tests", "tests", "{{TestsGuid}}"
 EndProject
-Project("{{CSharpProjectGuid}}") = "{{Author}}.{{Name}}", "src\{{Author}}.{{Name}}\{{Author}}.{{Name}}.csproj", "{{MainProjectGuid}}"
+Project("{{CSharpProjectGuid}}") = "{{Author(P)}}.{{Name(P)}}", "src\{{Author(P)}}.{{Name(P)}}\{{Author(P)}}.{{Name(P)}}.csproj", "{{MainProjectGuid}}"
 EndProject
-Project("{{CSharpProjectGuid}}") = "{{Author}}.{{Name}}.Godot", "src\{{Author}}.{{Name}}.Godot\{{Author}}.{{Name}}.Godot.csproj", "{{GodotProjectGuid}}"
+Project("{{CSharpProjectGuid}}") = "{{Author(P)}}.{{Name(P)}}.Godot", "src\{{Author(P)}}.{{Name(P)}}.Godot\{{Author(P)}}.{{Name(P)}}.Godot.csproj", "{{GodotProjectGuid}}"
 EndProject
-Project("{{CSharpProjectGuid}}") = "{{Author}}.{{Name}}.Tests", "tests\{{Author}}.{{Name}}.Tests\{{Author}}.{{Name}}.Tests.csproj", "{{TestsProjectGuid}}"
+Project("{{CSharpProjectGuid}}") = "{{Author(P)}}.{{Name(P)}}.Tests", "tests\{{Author(P)}}.{{Name(P)}}.Tests\{{Author(P)}}.{{Name(P)}}.Tests.csproj", "{{TestsProjectGuid}}"
 EndProject
-Project("{{CSharpProjectGuid}}") = "{{Author}}.{{Name}}.Godot.Tests", "tests\{{Author}}.{{Name}}.Godot.Tests\{{Author}}.{{Name}}.Godot.Tests.csproj", "{{GodotTestsProjectGuid}}"
+Project("{{CSharpProjectGuid}}") = "{{Author(P)}}.{{Name(P)}}.Godot.Tests", "tests\{{Author(P)}}.{{Name(P)}}.Godot.Tests\{{Author(P)}}.{{Name(P)}}.Godot.Tests.csproj", "{{GodotTestsProjectGuid}}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

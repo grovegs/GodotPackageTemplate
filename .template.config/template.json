@@ -18,18 +18,30 @@
         "name": {
             "type": "parameter",
             "isRequired": true,
-            "description": "Name of the package in pascal case.",
-            "dataType": "text",
+            "description": "Name of the package.",
             "replaces": "{{Name}}",
             "fileRename": "{{Name}}"
+        },
+        "pascalCaseName": {
+            "type": "derived",
+            "valueSource": "name",
+            "valueTransform": "pascalCase",
+            "replaces": "{{Name(P)}}",
+            "fileRename": "{{Name(P)}}"
         },
         "author": {
             "type": "parameter",
             "isRequired": true,
-            "description": "Author of the package in pascal case.",
-            "dataType": "text",
+            "description": "Author of the package.",
             "replaces": "{{Author}}",
             "fileRename": "{{Author}}"
+        },
+        "pascalCaseAuthor": {
+            "type": "derived",
+            "valueSource": "author",
+            "valueTransform": "pascalCase",
+            "replaces": "{{Author(P)}}",
+            "fileRename": "{{Author(P)}}"
         },
         "github": {
             "type": "parameter",
@@ -86,6 +98,29 @@
             "type": "generated",
             "generator": "guid",
             "replaces": "{{GodotTestsProjectGuid}}"
+        }
+    },
+    "forms": {
+        "titleCase": {
+            "identifier": "titleCase"
+        },
+        "invalidChars": {
+            "identifier": "replace",
+            "pattern": "([\\-_\\.\\ ])",
+            "replacement": ""
+        },
+        "pascalCase": {
+            "identifier": "chain",
+            "steps": [
+                "titleCase",
+                "invalidChars"
+            ]
+        },
+        "kebabCase": {
+            "identifier": "kebabCase"
+        },
+        "firtstLowerCase": {
+            "identifier": "firstLowerCaseInvariant"
         }
     },
     "sources": [

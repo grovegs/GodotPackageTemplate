@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference
-      Include="../{{Author}}.{{Name}}/{{Author}}.{{Name}}.csproj" />
+      Include="../{{Author(P)}}.{{Name(P)}}/{{Author(P)}}.{{Name(P)}}.csproj" />
   </ItemGroup>
 
   <ItemGroup>
