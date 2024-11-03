@@ -64,10 +64,15 @@
             "dataType": "text",
             "replaces": "{{Tags}}"
         },
-        "SolutionFolderGuid": {
+        "FolderGuid": {
             "type": "generated",
             "generator": "guid",
-            "replaces": "{{SolutionFolderGuid}}"
+            "replaces": "{{FolderGuid}}"
+        },
+        "ProjectGuid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{{ProjectGuid}}"
         },
         "SrcGuid": {
             "type": "generated",
@@ -79,25 +84,25 @@
             "generator": "guid",
             "replaces": "{{TestsGuid}}"
         },
-        "MainProjectGuid": {
+        "CoreProjectGuid": {
             "type": "generated",
             "generator": "guid",
-            "replaces": "{{MainProjectGuid}}"
+            "replaces": "{{CoreProjectGuid}}"
         },
         "GodotProjectGuid": {
             "type": "generated",
             "generator": "guid",
             "replaces": "{{GodotProjectGuid}}"
         },
-        "TestsProjectGuid": {
+        "CoreTestsProjectGuid": {
             "type": "generated",
             "generator": "guid",
-            "replaces": "{{TestsProjectGuid}}"
+            "replaces": "{{CoreTestsProjectGuid}}"
         },
-        "GodotTestsProjectGuid": {
+        "GodotCoreTestsProjectGuid": {
             "type": "generated",
             "generator": "guid",
-            "replaces": "{{GodotTestsProjectGuid}}"
+            "replaces": "{{GodotCoreTestsProjectGuid}}"
         }
     },
     "forms": {
