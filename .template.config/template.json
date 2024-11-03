@@ -31,13 +31,26 @@
             "replaces": "{{Author}}",
             "fileRename": "{{Author}}"
         },
-        "description": {
+        "github": {
             "type": "parameter",
             "isRequired": true,
+            "description": "The GitHub username associated with the package.",
+            "dataType": "text",
+            "replaces": "{{Github}}"
+        },
+        "description": {
+            "type": "parameter",
+            "isRequired": false,
             "description": "Description of the package.",
             "dataType": "text",
-            "replaces": "{{Description}}",
-            "fileRename": "{{Description}}"
+            "replaces": "{{Description}}"
+        },
+        "tags": {
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Semicolon-separated tags that categorize the package in kebab case.",
+            "dataType": "text",
+            "replaces": "{{Tags}}"
         }
     },
     "sources": [

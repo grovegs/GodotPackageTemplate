@@ -16,14 +16,14 @@
 
     <PackageId>$(AssemblyName)</PackageId>
     <PackageVersion>$(Version)</PackageVersion>
-    <PackageTags>godot;dependency-injection</PackageTags>
-    <PackageProjectUrl>https://github.com/grovegs/{{Name}}</PackageProjectUrl>
+    <PackageTags>{{Tags}}</PackageTags>
+    <PackageProjectUrl>https://github.com/{{Github}}/{{Name}}</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>Icon.png</PackageIcon>
 
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/grovegs/{{Name}}</RepositoryUrl>
+    <RepositoryUrl>https://github.com/{{Github}}/{{Name}}</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
