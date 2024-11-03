@@ -40,14 +40,14 @@
         },
         "description": {
             "type": "parameter",
-            "isRequired": false,
+            "defaultValue": "",
             "description": "Description of the package.",
             "dataType": "text",
             "replaces": "{{Description}}"
         },
         "tags": {
             "type": "parameter",
-            "isRequired": false,
+            "defaultValue": "",
             "description": "Semicolon-separated tags that categorize the package in kebab case.",
             "dataType": "text",
             "replaces": "{{Tags}}"
