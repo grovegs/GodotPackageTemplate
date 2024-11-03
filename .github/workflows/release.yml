@@ -26,6 +26,9 @@ jobs:
       title: ${{ steps.generate_title.outputs.title }}
 
     steps:
+      - name: 🔄 Checkout Code
+        uses: actions/checkout@v4
+
       - name: 🔧 Bump Version
         id: bump_version
         uses: grovegs/actions/.github/actions/bump-version@main
