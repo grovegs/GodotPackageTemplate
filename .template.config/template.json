@@ -38,7 +38,7 @@
     },
     "sources": [
         {
-            "source": "./src",
+            "source": "./src/GodotPackage",
             "target": "./"
         }
     ]
