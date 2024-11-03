@@ -14,8 +14,8 @@ on:
           - patch
 
 env:
-  NAME: [!name]
-  AUTHOR: [!author]
+  NAME: {{Name}}
+  AUTHOR: {{Author}}
 
 jobs:
   set_metadata:

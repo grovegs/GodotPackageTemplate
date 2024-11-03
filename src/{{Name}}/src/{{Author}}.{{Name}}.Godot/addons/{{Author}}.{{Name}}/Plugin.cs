@@ -1,7 +1,7 @@
 #if TOOLS
 using Godot;
 
-namespace [!author].[!name];
+namespace {{Author}}.{{Name}};
 
 [Tool]
 public partial class Plugin : EditorPlugin

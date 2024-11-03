@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference
-      Include="../[!author].[!name]/[!author].[!name].csproj" />
+      Include="../{{Author}}.{{Name}}/{{Author}}.{{Name}}.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -7,13 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E085CCD7-DFF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D9F6DD39-4BB4-410D-8D17-2ADBE8BB9842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[!author].[!name]", "src\[!author].[!name]\[!author].[!name].csproj", "{8E047BC7-93FE-48D7-AADF-10887FA2CEC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{{Author}}.{{Name}}", "src\{{Author}}.{{Name}}\{{Author}}.{{Name}}.csproj", "{8E047BC7-93FE-48D7-AADF-10887FA2CEC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[!author].[!name].Godot", "src\[!author].[!name].Godot\[!author].[!name].Godot.csproj", "{66511639-F52E-41CF-BD8E-D662780BD1AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{{Author}}.{{Name}}.Godot", "src\{{Author}}.{{Name}}.Godot\{{Author}}.{{Name}}.Godot.csproj", "{66511639-F52E-41CF-BD8E-D662780BD1AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[!author].[!name].Tests", "tests\[!author].[!name].Tests\[!author].[!name].Tests.csproj", "{2E401343-5AB9-472B-9E86-25B8240FBF39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{{Author}}.{{Name}}.Tests", "tests\{{Author}}.{{Name}}.Tests\{{Author}}.{{Name}}.Tests.csproj", "{2E401343-5AB9-472B-9E86-25B8240FBF39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[!author].[!name].Godot.Tests", "tests\[!author].[!name].Godot.Tests\[!author].[!name].Godot.Tests.csproj", "{B9F66A6D-60DB-45B2-8A39-1AF7BFEF4970}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{{Author}}.{{Name}}.Godot.Tests", "tests\{{Author}}.{{Name}}.Godot.Tests\{{Author}}.{{Name}}.Godot.Tests.csproj", "{B9F66A6D-60DB-45B2-8A39-1AF7BFEF4970}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

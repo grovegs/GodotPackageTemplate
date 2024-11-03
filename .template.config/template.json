@@ -17,26 +17,27 @@
     "symbols": {
         "name": {
             "type": "parameter",
+            "isRequired": true,
             "description": "Name of the package in pascal case.",
             "dataType": "text",
-            "replaces": "[!name]",
-            "fileRename": "[!name]"
+            "replaces": "{{Name}}",
+            "fileRename": "{{Name}}"
         },
         "author": {
             "type": "parameter",
             "isRequired": true,
             "description": "Author of the package in pascal case.",
             "dataType": "text",
-            "replaces": "[!author]",
-            "fileRename": "[!author]"
+            "replaces": "{{Author}}",
+            "fileRename": "{{Author}}"
         },
         "description": {
             "type": "parameter",
             "isRequired": true,
             "description": "Description of the package.",
             "dataType": "text",
-            "replaces": "[!description]",
-            "fileRename": "[!description]"
+            "replaces": "{{Description}}",
+            "fileRename": "{{Description}}"
         }
     },
     "sources": [

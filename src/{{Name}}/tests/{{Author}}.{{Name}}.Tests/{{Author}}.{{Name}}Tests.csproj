@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <ProjectReference
-      Include="../../src/[!author].[!name]/[!author].[!name].csproj" />
+      Include="../../src/{{Author}}.{{Name}}/{{Author}}.{{Name}}.csproj" />
   </ItemGroup>
 
 </Project>

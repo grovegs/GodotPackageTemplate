@@ -9,8 +9,8 @@ on:
       - main
 
 env:
-  NAME: [!name]
-  AUTHOR: [!author]
+  NAME: {{Name}}
+  AUTHOR: {{Author}}
 
 jobs:
   format_core:
