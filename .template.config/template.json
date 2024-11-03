@@ -25,8 +25,7 @@
             "type": "parameter",
             "description": "Author of the package in pascal case.",
             "dataType": "text",
-            "replaces": "[!author]",
-            "defaultValue": "Author"
+            "replaces": "[!author]"
         },
         "description": {
             "type": "parameter",
