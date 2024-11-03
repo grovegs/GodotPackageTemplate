@@ -3,9 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <NoWarn>NU5128</NoWarn>
+    <NoBuild>true</NoBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
-    <ContentTargetFolders>content</ContentTargetFolders>
     <NoDefaultExcludes>true</NoDefaultExcludes>
 
     <Title>GroveGames.GodotPackageTemplate</Title>
@@ -36,8 +37,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include=".template.config/template.json" Pack="true" PackagePath=".template.config/" />
-    <Content Include="content/**/*" Exclude="content/**/bin/**/*;content/**/obj/**/*" />
+    <Content Include=".template.config/template.json" Pack="true" PackagePath=".template.config/" />
+    <Content Include="src/**/*" Pack="true" PackagePath="src/" />
     <Compile Remove="**/*" />
   </ItemGroup>
 
