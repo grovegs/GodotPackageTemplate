@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference
-      Include="../$(Author).$(Name)/$(Author).$(Name).csproj" />
+      Include="../[!author].[!name]/[!author].[!name].csproj" />
   </ItemGroup>
 
   <ItemGroup>

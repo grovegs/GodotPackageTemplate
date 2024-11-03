@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <ProjectReference
-      Include="../../src/$(Author).$(Name)/$(Author).$(Name).csproj" />
+      Include="../../src/[!author].[!name].Godot/[!author].[!name].Godot.csproj" />
   </ItemGroup>
 
 </Project>

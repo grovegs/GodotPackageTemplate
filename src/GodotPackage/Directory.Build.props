@@ -7,9 +7,9 @@
     <Nullable>enable</Nullable>
     <NoWarn>1591;1573</NoWarn>
 
-    <RootNamespace>$(Author).$(Name)</RootNamespace>
-    <Title>$(Author).$(Name)</Title>
-    <Description>$(Description)</Description>
+    <RootNamespace>[!author].[!name]</RootNamespace>
+    <Title>[!author].[!name]</Title>
+    <Description>[!description]</Description>
     <Company>Grove Games</Company>
     <Authors>Grove Games</Authors>
     <Copyright>© Grove Games</Copyright>
@@ -17,13 +17,13 @@
     <PackageId>$(AssemblyName)</PackageId>
     <PackageVersion>$(Version)</PackageVersion>
     <PackageTags>godot;dependency-injection</PackageTags>
-    <PackageProjectUrl>https://github.com/grovegs/$(Name)</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/grovegs/[!name]</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>Icon.png</PackageIcon>
 
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/grovegs/$(Name)</RepositoryUrl>
+    <RepositoryUrl>https://github.com/grovegs/[!name]</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

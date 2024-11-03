@@ -9,8 +9,8 @@ on:
       - main
 
 env:
-  NAME: $(Name)
-  AUTHOR: $(Author)
+  NAME: [!name]
+  AUTHOR: [!author]
 
 jobs:
   format_core:

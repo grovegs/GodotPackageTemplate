@@ -14,8 +14,8 @@ on:
           - patch
 
 env:
-  NAME: $(Name)
-  AUTHOR: $(Author)
+  NAME: [!name]
+  AUTHOR: [!author]
 
 jobs:
   set_metadata:
