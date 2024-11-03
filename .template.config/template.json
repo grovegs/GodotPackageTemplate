@@ -12,32 +12,36 @@
         "language": "C#",
         "type": "project"
     },
-    "sourceName": "GroveGames.GodotPackageTemplate",
+    "sourceName": "GroveGames.GodotPackage",
     "preferNameDirectory": true,
     "symbols": {
         "name": {
             "type": "parameter",
             "description": "Name of the package in pascal case.",
             "dataType": "text",
-            "replaces": "[!name]"
+            "replaces": "[!name]",
+            "fileRename": "[!name]"
         },
         "author": {
             "type": "parameter",
+            "isRequired": true,
             "description": "Author of the package in pascal case.",
             "dataType": "text",
-            "replaces": "[!author]"
+            "replaces": "[!author]",
+            "fileRename": "[!author]"
         },
         "description": {
             "type": "parameter",
+            "isRequired": true,
             "description": "Description of the package.",
             "dataType": "text",
-            "defaultValue": "Description",
-            "replaces": "[!description]"
+            "replaces": "[!description]",
+            "fileRename": "[!description]"
         }
     },
     "sources": [
         {
-            "source": "./src/GodotPackage",
+            "source": "./src",
             "target": "./"
         }
     ]
