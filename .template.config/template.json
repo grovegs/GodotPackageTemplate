@@ -5,8 +5,8 @@
         "Godot",
         "Package"
     ],
-    "name": "Godot Package Template",
-    "identity": "GroveGames.GodotPackageTemplate",
+    "name": "Godot Package",
+    "identity": "GroveGames.GodotPackage",
     "shortName": "godotpackage",
     "tags": {
         "language": "C#",
