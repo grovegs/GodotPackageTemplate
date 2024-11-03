@@ -1,7 +1,6 @@
 # GroveGames.GodotPackageTemplate
 
 [![Build Status](https://github.com/grovegs/GodotPackageTemplate/actions/workflows/release.yml/badge.svg)](https://github.com/grovegs/GodotPackageTemplate/actions/workflows/release.yml)
-[![Tests](https://github.com/grovegs/GodotPackageTemplate/actions/workflows/tests.yml/badge.svg)](https://github.com/grovegs/GodotPackageTemplate/actions/workflows/tests.yml)
 [![Latest Release](https://img.shields.io/github/v/release/grovegs/GodotPackageTemplate)](https://github.com/grovegs/GodotPackageTemplate/releases/latest)
 [![NuGet](https://img.shields.io/nuget/v/GroveGames.GodotPackageTemplate)](https://www.nuget.org/packages/GroveGames.GodotPackageTemplate)
 
