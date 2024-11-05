@@ -14,7 +14,7 @@ on:
           - patch
 
 env:
-  NAME: GodotPackageTemplate
+  NAME: ${{ vars.PROJECT_NAME }}
 
 jobs:
   set_metadata:
