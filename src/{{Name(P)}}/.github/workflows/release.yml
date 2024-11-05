@@ -14,8 +14,8 @@ on:
           - patch
 
 env:
-  NAME: {{Name(P)}}
-  AUTHOR: {{Author(P)}}
+  NAME: ${{ vars.PROJECT_NAME }}
+  AUTHOR: ${{ vars.PROJECT_AUTHOR }}
 
 jobs:
   set_metadata:
