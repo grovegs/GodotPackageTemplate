@@ -20,7 +20,8 @@ jobs:
   set_metadata:
     runs-on: ubuntu-latest
     outputs:
-      version: ${{ steps.bump_version.outputs.next_version }}
+      version: ${{ steps.bump_version.outputs.next-version }}
+      latest-version: ${{ steps.bump_version.outputs.latest-version }}
       artifact: ${{ steps.generate_artifact.outputs.artifact }}
       title: ${{ steps.generate_title.outputs.title }}
 
@@ -37,13 +38,13 @@ jobs:
       - name: 📦 Generate Artifact
         id: generate_artifact
         run: |
-          artifact=$(echo $NAME | sed -E 's/([a-z])([A-Z])/\1-\2/g' | tr '[:upper:]' '[:lower:]')-${{ steps.bump_version.outputs.next_version }}
+          artifact=$(echo $NAME | sed -E 's/([a-z])([A-Z])/\1-\2/g' | tr '[:upper:]' '[:lower:]')-${{ steps.bump_version.outputs.next-version }}
           echo artifact=$artifact >> $GITHUB_OUTPUT
 
       - name: 📝 Generate Title
         id: generate_title
         run: |
-          title="$(echo $NAME | sed -E 's/([a-z])([A-Z])/\1 \2/g') ${{ steps.bump_version.outputs.next_version }}"
+          title="$(echo $NAME | sed -E 's/([a-z])([A-Z])/\1 \2/g') ${{ steps.bump_version.outputs.next-version }}"
           echo title=$title >> $GITHUB_OUTPUT
 
   build:
@@ -90,4 +91,5 @@ jobs:
         with:
           title: ${{ needs.set_metadata.outputs.title }}
           version: ${{ needs.set_metadata.outputs.version }}
+          latest-version: ${{ needs.set_metadata.outputs.latest-version }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
