@@ -64,11 +64,6 @@
             "dataType": "text",
             "replaces": "{{Tags}}"
         },
-        "FolderGuid": {
-            "type": "generated",
-            "generator": "guid",
-            "replaces": "{{FolderGuid}}"
-        },
         "ProjectGuid": {
             "type": "generated",
             "generator": "guid",

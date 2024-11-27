@@ -2,9 +2,9 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{{{FolderGuid}}}") = "src", "src", "{{{SrcGuid}}}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{{{SrcGuid}}}"
 EndProject
-Project("{{{FolderGuid}}}") = "tests", "tests", "{{{TestsGuid}}}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{{{TestsGuid}}}"
 EndProject
 Project("{{{ProjectGuid}}}") = "{{Author(P)}}.{{Name(P)}}", "src\{{Author(P)}}.{{Name(P)}}\{{Author(P)}}.{{Name(P)}}.csproj", "{{{CoreProjectGuid}}}"
 EndProject
