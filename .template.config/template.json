@@ -128,5 +128,21 @@
             "source": "./src",
             "target": "./"
         }
+    ],
+    "postActions": [
+        {
+            "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+            "args": {
+                "executable": "bash",
+                "args": "setup.sh"
+            },
+            "manualInstructions": [
+                {
+                    "text": "Run 'setup.sh' manually if this fails to complete the setup process."
+                }
+            ],
+            "continueOnError": false,
+            "description": "Executes the setup script to finalize the project initialization. This includes creating necessary directories, symbolic links, and other project-specific configurations."
+        }
     ]
 }
