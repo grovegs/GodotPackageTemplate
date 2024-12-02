@@ -128,5 +128,21 @@
             "source": "./src",
             "target": "./"
         }
+    ],
+    "postActions": [
+        {
+            "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+            "args": {
+                "executable": "bash",
+                "args": "setup_godotpackage.sh"
+            },
+            "manualInstructions": [
+                {
+                    "text": "Run 'setup_godotpackage.sh' manually if this fails to complete the setup process."
+                }
+            ],
+            "continueOnError": false,
+            "description": "Executes the setup script to finalize the template initialization."
+        }
     ]
 }
