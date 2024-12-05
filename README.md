@@ -21,16 +21,16 @@ dotnet new install GroveGames.GodotPackageTemplate
 Once installed, you can generate a new Godot package using the template:
 
 ```bash
-dotnet new godotpackage --name "Behaviour Tree" --author "Grove Games" --github "grovegs" --description "A modular and extensible behavior tree framework for AI development in C# for the .NET and Godot Engine." --tags "godot;behaviour-tree"
+dotnet new godotpackage -na "Behaviour Tree" -au "Grove Games" -g "grovegs" -de "A modular and extensible behavior tree framework for AI development in C# for the .NET and Godot Engine." -ta "godot;behaviour-tree"
 ```
 
 ### Parameters
 
-- `--name`: **(Required)** The name of your package.
-- `--author`: **(Required)** The author of the package.
-- `--github`: **(Required)** Your GitHub username.
-- `--description`: **(Optional)** A description for your package.
-- `--tags`: **(Optional)** Semicolon-separated tags to categorize the package.
+- `-na`: **(Required)** The name of your package.
+- `-au`: **(Required)** The author of the package.
+- `-g`: **(Required)** Your GitHub username.
+- `-de`: **(Optional)** A description for your package.
+- `-ta`: **(Optional)** Semicolon-separated tags to categorize the package.
 
 ---
 
@@ -40,40 +40,46 @@ The generated package will have the following structure:
 
 ```plaintext
 ├── .github/
-│   ├── CODEOWNERS                 # Defines ownership for repository components
-│   ├── dependabot.yml             # Automates dependency updates
+│   ├── CODEOWNERS                                          # Repository component ownership
+│   ├── dependabot.yml                                      # Automates dependency updates
 │   └── workflows/
-│       ├── ci.yml                 # CI/CD setup for building and testing
-│       ├── format.yml             # Workflow for code formatting checks
-│       ├── release.yml            # Workflow for managing releases
-│       └── tests.yml              # Workflow for running unit tests
+│       ├── format.yml                                      # Workflow for code formatting checks
+│       ├── release.yml                                     # Workflow for managing releases
+│       └── tests.yml                                       # Workflow for running unit tests
+
 ├── .vscode/
-│   └── ...                        # VSCode project-specific settings
+│   └── settings.json                                       # VSCode project-specific settings
+
 ├── sandbox/
-│   └── ...                        # Sandbox-related files
+│   └── addons/                                             # Symbolic link to addon source
+
 ├── src/
-│   ├── BehaviourTree/
-│   │   ├── BehaviourTree.csproj   # Core library for your package
-│   │   └── ...                    # Additional source files
-│   ├── BehaviourTree.Godot/
-│   │   ├── BehaviourTree.Godot.csproj  # Godot-specific library project
-│   │   └── ...                         # Additional source files for Godot integration
+│   ├── GroveGames.BehaviourTree/
+│   │   ├── GroveGames.BehaviourTree.csproj                 # Core library project
+│   │   └── ...                                             # Additional resources or files
+│   ├── GroveGames.BehaviourTree.Godot/
+│   │   ├── GroveGames.BehaviourTree.Godot.csproj           # Godot-specific library project
+│   │   ├── addons/
+│   │   │   └── GroveGames.BehaviourTree                    # Addon source files
+│   │   └── ...                                             # Additional resources or files
+
 ├── tests/
-│   ├── BehaviourTree.Tests/
-│   │   ├── BehaviourTree.Tests.csproj  # Unit tests for the core package
-│   │   └── ...                         # Test files
-│   ├── BehaviourTree.Godot.Tests/
-│   │   ├── BehaviourTree.Godot.Tests.csproj  # Unit tests for the Godot integration
-│   │   └── ...                               # Test files
-├── .editorconfig                  # Coding style configuration
-├── .gitattributes                 # Git attributes for line endings and more
-├── .gitignore                     # Git ignore rules
-├── Directory.Build.props          # Shared MSBuild properties for the solution
-├── Icon.png                       # Project icon
-├── LICENSE                        # License information
-├── README.md                      # Documentation for your package
-├── global.json                    # Global .NET SDK configuration
-└── BehaviourTree.sln              # Solution file for the package
+│   ├── GroveGames.BehaviourTree.Tests/
+│   │   ├── GroveGames.BehaviourTree.Tests.csproj           # Unit tests for core library
+│   │   └── ...                                             # Test files and resources
+│   ├── GroveGames.BehaviourTree.Godot.Tests/
+│   │   ├── GroveGames.BehaviourTree.Godot.Tests.csproj     # Unit tests for Godot integration
+│   │   └── ...                                             # Test files and resources
+
+├── .editorconfig                                           # Code style and formatting configuration
+├── .gitattributes                                          # Git attributes for line endings and more
+├── .gitignore                                              # Git ignore rules
+├── Directory.Build.props                                   # Shared MSBuild properties
+├── Icon.png                                                # Project icon
+├── LICENSE                                                 # License information
+├── README.md                                               # Documentation for your package
+├── global.json                                             # Global .NET SDK configuration
+└── GroveGames.BehaviourTree.sln                            # Solution file for the package
 ```
 
 ---
