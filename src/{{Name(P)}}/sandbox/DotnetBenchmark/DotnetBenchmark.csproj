@@ -8,8 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference
-      Include="..\..\src\{{Author(P)}}.{{Name(P)}}\{{Author(P)}}.{{Name(P)}}.csproj" />
+    <ProjectReference Include="..\..\src\{{Author(P)}}.{{Name(P)}}\{{Author(P)}}.{{Name(P)}}.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.14.0" />
   </ItemGroup>
 
 </Project>
