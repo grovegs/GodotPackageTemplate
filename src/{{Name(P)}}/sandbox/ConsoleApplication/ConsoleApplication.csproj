@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference
+      Include="..\..\src\{{Author(P)}}.{{Name(P)}}\{{Author(P)}}.{{Name(P)}}.csproj" />
+  </ItemGroup>
+
 </Project>
